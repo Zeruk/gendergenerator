@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body style="background: url(imgs/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;">
+    <div style="
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 400px;
+      padding: 50px;
+      background-color: lightgoldenrodyellow;
+      border-radius: 30px;
+      font-size: 20px;
+      text-align: center;
+      font-family: Roboto;">
+      <div>Generate your gender!</div>
+      <div id="generatedName" style="
+        font-family: cursive;
+        font-weight: 800;
+        margin-top: 20px;
+        ">Your generated gender will be here</div>
+      <button onclick="generateName()" style="
+        padding: 33px 15px;
+        background-color: pink;
+        border-radius: 40px;
+        margin-top: 50px;
+        ">Generate!</button>
+      <img id="mainlogo" src="imgs/rh.svg" style="
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100px;">
+      <a href="https://t.me/eggog" style="
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100px;">
+        <img src="imgs/telegram.svg" style="
+          margin-top: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          width: 40px;">
+      </a>
+    </div>
+
+    <script type="text/javascript">
+      var arr = [{"prefix":"A"},{"prefix":"librafluid"},{"prefix":"Alexi"},{"prefix":"Alius"},{"prefix":"Ambi"},{"prefix":"Amare"},{"prefix":"Ambonec"},{"prefix":"Amica"},{"prefix":"Amo"},{"prefix":"flirt"},{"prefix":"Amor"},{"prefix":"Androgyne"},{"prefix":"Anesi"},{"prefix":"Angeli"},{"prefix":"Angenital"},{"prefix":"Ano"},{"prefix":"Anon"},{"prefix":"Ante"},{"prefix":"Anti"},{"prefix":"un"},{"prefix":"Anxie"},{"prefix":"Anvis"},{"prefix":"Apa"},{"prefix":"lethar"},{"prefix":"Apconsu"},{"prefix":"Apo"},{"prefix":"Apollo"},{"prefix":"Apora"},{"prefix":"Aptu"},{"prefix":"Aquari"},{"prefix":"Archai"},{"prefix":"Arifluid"},{"prefix":"ari"},{"prefix":"Ari"},{"prefix":"arifluid"},{"prefix":"Arithma"},{"prefix":"Argo"},{"prefix":"Aster"},{"prefix":"Astral"},{"prefix":"Atmos"},{"prefix":"Auti"},{"prefix":"Auto"},{"prefix":"Axi"},{"prefix":"Bat"},{"prefix":"nocturnal"},{"prefix":"Bi"},{"prefix":"Bi"},{"prefix":"Bio"},{"prefix":"Blizz"},{"prefix":"winte"},{"prefix":"Bog"},{"prefix":"swamp"},{"prefix":"Border"},{"prefix":"Boyflux"},{"prefix":"Brevi"},{"prefix":"Burst"},{"prefix":"Cadens"},{"prefix":"Cado"},{"prefix":"Caedo"},{"prefix":"Cael"},{"prefix":"Cance"},{"prefix":"a"},{"prefix":"Canis"},{"prefix":"Capri"},{"prefix":"Carmi"},{"prefix":"Cassflux"},{"prefix":"Cass"},{"prefix":"Cavea"},{"prefix":"Cavus"},{"prefix":"Cend"},{"prefix":"a","meaning":"действие, направленное от чего-либо, удаление; отсечение, отделение, отклонение, отказ, отрицание; превышение\n"},{"prefix":"ad","meaning":"направленноcть к чему-либо, приближение; добавление, присоединение, начинательность, дополнительность, близость, соотнесённость с чем-либо. Часто \"d\" уподобляется первой букве корня, поэтому приставка превращается в ac-, af-, ag-, al-, an-, ap-, ar-, as-, at-\n"},{"prefix":"aequi","meaning":"равный, один из равных\n"},{"prefix":"alter","meaning":"другой, один из двух, противоположный, переменившийся\n"},{"prefix":"alti","meaning":"находящийся высоко, на высоте\n"},{"prefix":"amb","meaning":"двойственность, двойная функция, наличие двух разных свойств; кругом, вокруг, около, с обеих сторон\n"},{"prefix":"ante","meaning":"расположенность впереди, перед, до\n"},{"prefix":"bi","meaning":"двойственность, двойная функция, наличие двух разных свойств\n"},{"prefix":"circum","meaning":"вокруг, кругом\n"},{"prefix":"cis","meaning":"(расположенный) с этой стороны\n"},{"prefix":"con","meaning":"совместность действия, объединение, сообща, вместе. Если корень начинается с согласных b, m, p, используется com-; перед начальным l корня – col-, а перед r – cor-. Корню, который начинается с гласной, предшествует приставка в форме co-\n"},{"prefix":"contr","meaning":"противодействие, противопоставление, противоположность\n"},{"prefix":"de","meaning":"отделение, устранение, удаление, лишение, уничтожение; недостаток, отсутствие; движение сверху вниз, снижение; завершение действия\n"},{"prefix":"dis","meaning":"разделение, разъединение, расчленение; отсутствие, недостаток; распространение. Конечная буква \"c\" выпадает перед некоторыми начальными согласными корня (получается приставка di-) или переходит в \"f\" (получается dif-), если корень начинается с \"f\".\n"},{"prefix":"е","meaning":"бывший; нахождение вне чего-либо; выход, удаление, извлечение из чего-л., движение изнутри наружу, вверх; изменение качества, завершение, усиление. Перед корнем на \"f\" приставка ex- превращается в ef-\n"},{"prefix":"extra","meaning":"высшая степень качества; выход за пределы чего-либо; нахождение вне, снаружи\n"},{"prefix":"in","meaning":"отрицание или противоположность; действие, направленное внутрь чего-либо или нахождение в чём-либо, внутри чего-либо. Согласная \"n\" в приставке переходит в \"l\", \"m\", \"r\", если с них начинается корень (получаются приставки il-, im-, ir-), перед \"b\" и \"p\" превращается в \"m\" (получается im-)\n"},{"prefix":"inaequi","meaning":"неравномерность признаков, свойств\n"},{"prefix":"infra","meaning":"расположение под чем-либо, ниже чего-либо\n"},{"prefix":"inter","meaning":"осуществление или расположение между кем-либо, чем-либо, промежуточность; взаимность, взаимосвязь.\n"},{"prefix":"intra","meaning":"находящийся внутри, между, направленный внутрь\n"},{"prefix":"multi","meaning":"существенное, значительное наличие признака или свойств; множественность\n"},{"prefix":"ob","meaning":"нахождение впереди, перед чем-либо; противодействие, противопоставление. Приставка ob- ассимилирует \"b\" перед некоторыми начальными согласными корня (например, перед \"c\" и \"p\" получаются oc- и op-)\n"},{"prefix":"pauc","meaning":"незначительное, несущественное наличие признака или свойства\n"},{"prefix":"per","meaning":"усиление, завершение, законченность действия; действие, направленное сквозь, через что-либо, выполняемое посредством чего-либо\n"},{"prefix":"pluri","meaning":"многократность, наличие многочисленных повторов признаков или свойств\n"},{"prefix":"post","meaning":"после, вслед за\n"},{"prefix":"prae","meaning":"нахождение впереди, упреждение, преждевременность, действие до, прежде чего-либо, перед чем-либо; высокая или высшая степень\n"},{"prefix":"pro","meaning":"движение вперёд, действие в интересах или вместо кого-либо или чего-либо\n"},{"prefix":"quadri","meaning":"наличие четырех повторов признака или свойства, четырехкратность\n"},{"prefix":"quin","meaning":"наличие пяти повторов признака или свойства, пятикратность\n"},{"prefix":"re","meaning":"обратное, противоположное действие, противодействие; возобновление или повторность действия\n"},{"prefix":"semi","meaning":"половинчатость, незавершенность\n"},{"prefix":"semper","meaning":"всегда, постоянно\n"},{"prefix":"sub","meaning":"нахождение под чем-либо или внутри, ниже, внизу, снизу или при чём-либо, близ, около чего-либо, скрытность; подчинение, зависимость, неполноту, вторичность. Часто \"b\" превращается в su- перед начальной \"s\" корня с последующей согласной, в sue-, suf-, sug-, sum-, sup-, sur- соответственно перед \"с\", \"f\", \"g\", \"m\", \"p', 'r'; перед согласными \"p\", \"t\" и (иногда) \"с\" принимает форму sus-\n"},{"prefix":"super","meaning":"высшее качество, усиленное действие; главный; расположенный сверху, над чем-либо; превышение, излишек\n"},{"prefix":"supra","meaning":"сверху, на поверхности\n"},{"prefix":"trans","meaning":"перемещение, прохождение через, сквозь что-либо, пересечение большого пространства; расположение за пределами чего-либо, по ту сторону чего-либо\n"},{"prefix":"tri","meaning":"тройственность, троякость, наличие трех свойств или признаков\n"},{"prefix":"ubi","meaning":"нахождение где-либо\n"},{"prefix":"ultra","meaning":"крайняя степень проявления какого-либо признака; крайний, находящийся за пределами, по другую сторону чего-либо; превосходящий какую-либо меру\n"},{"prefix":"uni","meaning":"уникальность, единичность, однонаправленность\n"}];
+
+      function generateName(timer=5) {
+        var nameDiv = document.querySelector('#generatedName');
+        var randint = Math.floor(Math.random() * arr.length);
+        nameDiv.innerText = arr[randint].prefix+'gender';
+        if(timer < 1000) {
+          setTimeout(function() {
+            generateName(timer*1.1*1.1)
+          },timer);
+        }
+        else {
+          var randbg = Math.floor(Math.random() * 17);
+          document.querySelector('body').style.background = 'url("imgs/mem_'+String(randbg)+'.jpg") 0% 0% / cover no-repeat';
+        }
+
+      }
+    </script>
+  </body>
+</html>
